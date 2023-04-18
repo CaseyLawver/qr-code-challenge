@@ -6,9 +6,14 @@
 }
 
 body {
+    background-color: #D6E1F0;
     font-family: "Outfit";
     font-size: 15px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 h1 {
@@ -20,74 +25,23 @@ h1 {
 p {
     font-weight: 400;
     color: darkgrey;
-    padding: 10px 10px;
+    padding: 10px;
     font-size: 1em;
 }
 
 
-.background {
-    background-color: #D6E1F0;
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    padding: 100px 30px;
-    margin: 0;
-}
+
 
 .content-wrapper {
+    max-width: 320px;
     background-color: white;
     border-radius: 25px;
     padding: 23px 15px 18px 15px;
 }
 
-.qr-code {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 250px;
-    margin: 10px 0;
-}
+
 
 img {
     width: 100%;
     border-radius: 10px;
-}
-
-
-@media only screen and (min-width: 1200px) {
-
-    .background {
-        padding-bottom: 200px;
-    }
-
-    img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .content-wrapper {
-        width: 23%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-flow: row wrap;
-        padding-bottom: 20px;
-
-    }
-
-    .qr-code {
-        margin: 20px 0;
-    }
-
-    h1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 30px 10px 20px 10px;
-    }
-
-    p {
-        padding: 0 20px 15px 20px;
-    }
 }
